@@ -1,0 +1,143 @@
+/****** reset ******/
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Cambria, Cochin, Georgia,
+    Times, "Times New Roman", serif;
+  /* font-size: 16px; /* affects rem */
+}
+
+/****** debugging ******/
+.red {
+  outline: 2px dotted red;
+}
+.orange {
+  outline: 2px dotted orange;
+}
+.pink {
+  outline: 2px dotted pink;
+}
+.blue {
+  outline: 2px dotted cornflowerblue;
+}
+.yellow {
+  outline: 2px solid yellow;
+}
+
+/****** class ******/
+.contact-me {
+  text-align: center;
+  /* outline: 2px dotted blue; */
+}
+.contact-me li {
+  list-style-type: none;
+  display: inline;
+  /* outline: 2px dotted blue; */
+}
+.contact-me li:not(:last-child):after {
+  /* .contact-me li:after { */
+  /* outline: 2px dotted blue; */
+  content: " | ";
+}
+/* .contact-me li:last-child:after { 
+  content: "";
+} */
+.cv-text-size {
+  font-size: 0.7rem; /* 0.8rem=10pt | 0.7rem=8pt */
+}
+.no-bullet {
+  list-style-type: none;
+}
+/* moved to <h6>
+.skills > div {
+  margin-top: 1.5rem;
+} */
+.edus ul li:first-child {
+  font-weight: bold;
+}
+.skills span {
+  font-weight: bold;
+}
+.skills ul li {
+  /* color: red; */
+  /* outline: 2px dotted orangered; */
+  margin: 0rem;
+  padding: 0rem;
+  /* font-size: 0.65rem; */
+}
+.projs a {
+  font-weight: bold;
+}
+.jobs .col-3 ul li:first-child {
+  /* outline: 2px dotted orange; */
+  font-weight: bold;
+}
+.jobs .col-9 ul li {
+  /* outline: 2px dotted orangered; */
+  margin-bottom: 0.6rem;
+}
+.row {
+  /* outline: 2px dotted red; */
+  margin-bottom: 1rem;
+}
+.bg-img {
+  background: url("./Img/parchmentPaper.jpg");
+  /* filter: grayscale(90%); better for vibrant color item */
+  /* opacity: 0.5;   never put with img!!! */
+  /* z-index: -1; */
+  max-height: 100%;
+  max-width: 80%;
+}
+/* body div {
+  /* outline: 2px dotted orangered; */
+  /* height: 100%; */
+  /* width: 100%; 
+} */
+
+
+/****** tag elem ******/
+body {
+  background-color: rgb(255, 255, 255);
+  line-height: 1.155rem;
+  /* line-height: 1.6; standard */
+}
+
+main {
+  /* outline: 2px dotted blue; */
+  margin: 4rem 5rem; /* top/bottom right/left */
+  padding: 4rem;
+  background-color: rgba(252, 252, 245, 0.55);
+  /* background-color: rgba(0, 0, 0, 0.25); */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 58px 0 rgba(0, 0, 0, 0.3), 0 6px 50px 0 rgba(0, 0, 0, 0.19);
+  max-height: 100%;
+  max-width: 100%;
+  /* overflow: scroll;   scrollbar enabled within elem space */
+  /* scroll-behavior: smooth; */
+  /* text-overflow: ellipsis; */
+}
+
+section {
+  margin: 2rem;
+  /* outline: 2px dotted orange;  */
+}
+
+h6 {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  margin-left: 3em;
+  margin-right: 3em;
+  /* outline: 2px dotted red; */
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 4rem;
+  /* text-decoration: line-through; */
+}
